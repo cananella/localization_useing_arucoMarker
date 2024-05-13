@@ -14,10 +14,13 @@ def detect_markers(image, camera_matrix, dist_coeffs, marker_size):
         rvecs, tvecs, _ = my_estimatePoseSingleMarkers(corners, marker_size, camera_matrix, dist_coeffs)
         if rvecs is not None and tvecs is not None:
             for rvec, tvec, marker_id in zip(rvecs, tvecs, ids):
-                rvec, _ = cv2.Rodrigues(rvec)
-                marker_pos = np.dot(-rvec.T, tvec)
+                rvect, _ = cv2.Rodrigues(rvec)
+                marker_pos = np.dot(-rvect.T, tvec)
                 marker_pos = marker_pos.flatten()
                 print("Marker ID:", marker_id, "Marker position:", marker_pos)
+                print("rvec: ",rvec,"   tvec: ",tvec)
+            print("")
+                
     else:
         print("No markers detected")
     return image
