@@ -6,7 +6,7 @@
 ![animation](https://github.com/cananella/localization_useing_arucoMarker/assets/97207725/a646fefd-8883-42bc-973b-dd864d15ba20)
 
 
-[img by PythonRobotic](https://github.com/AtsushiSakai/PythonRobotics?tab=readme-ov-file)
+[img by PythonRobotics](https://github.com/AtsushiSakai/PythonRobotics?tab=readme-ov-file)
 
 ### demo
 
